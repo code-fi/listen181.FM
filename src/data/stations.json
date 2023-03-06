@@ -1,0 +1,170 @@
+{
+  "description": "Scrapped from 181.fm/mcodes",
+  "channels": [
+    {
+      "genre": "Oldies",
+      "stations": [
+        {
+          "name": "Classic Hits 181",
+          "code": "181-greatoldies_128k.mp3",
+          "e_rated": false
+        },
+        {
+          "name": "Good Time Oldies",
+          "code": "181-goodtime_128k.mp3",
+          "e_rated": false
+        },
+        {
+          "name": "Mellow Gold",
+          "code": "181-mellow_128k.mp3",
+          "e_rated": false
+        },
+        {
+          "name": "Soul",
+          "code": "181-soul_128k.mp3",
+          "e_rated": false
+        },
+        {
+          "name": "Beatles",
+          "code": "181-beatles_128k.mp3",
+          "e_rated": false
+        },
+        {
+          "name": "Super 70s",
+          "code": "181-70s_128k.mp3",
+          "e_rated": false
+        }
+      ]
+    },
+    {
+      "genre": "80's Decade",
+      "stations": [
+        {
+          "name": "Awesome 80's",
+          "code": "181-awesome80s_128k.mp3",
+          "e_rated": false
+        },
+        {
+          "name": "Lite 80's",
+          "code": "181-lite80s_128k.mp3",
+          "e_rated": false
+        },
+        {
+          "name": "80's Country",
+          "code": "181-80scountry_128k.mp3",
+          "e_rated": false
+        },
+        {
+          "name": "80's RnB",
+          "code": "181-80srnb_128k.mp3",
+          "e_rated": false
+        },
+        {
+          "name": "80's Lite RnB",
+          "code": "181-80sliternb_128k.mp3",
+          "e_rated": false
+        },
+        {
+          "name": "80's Hairband",
+          "code": "181-hairband_128k.mp3",
+          "e_rated": false
+        }
+      ]
+    },
+    {
+      "genre": "90's Decade",
+      "stations": [
+        {
+          "name": "Star 90's",
+          "code": "181-star90s_128k.mp3",
+          "e_rated": false
+        },
+        {
+          "name": "90's Country",
+          "code": "181-90scountry_128k.mp3",
+          "e_rated": false
+        },
+        {
+          "name": "Lite 90's",
+          "code": "181-lite90s_128k.mp3",
+          "e_rated": false
+        },
+        {
+          "name": "90's Alternative",
+          "code": "181-90salt_128k.mp3",
+          "e_rated": false
+        },
+        {
+          "name": "90's Dance",
+          "code": "181-90sdance_128k.mp3",
+          "e_rated": false
+        },
+        {
+          "name": "90's Lite RnB",
+          "code": "181-90sliternb_128k.mp3",
+          "e_rated": false
+        },
+        {
+          "name": "90's RnB",
+          "code": "181-90srnb_128k.mp3",
+          "e_rated": false
+        }
+      ]
+    },
+    {
+      "genre": "Pop",
+      "stations": [
+        {
+          "name": "Pop 181 (Top 40)",
+          "code": "181-power_128k.mp3",
+          "e_rated": false
+        },
+        {
+          "name": "Pop 181",
+          "code": "181-powerexplicit_128k.mp3",
+          "e_rated": true
+        },
+        {
+          "name": "The Office",
+          "code": "181-office_128k.mp3",
+          "e_rated": false
+        },
+        {
+          "name": "The Mix",
+          "code": "181-themix_128k.mp3",
+          "e_rated": false
+        },
+        {
+          "name": "The Point",
+          "code": "181-thepoint_128k.mp3",
+          "e_rated": false
+        },
+        {
+          "name": "Old School HipHop/RnB",
+          "code": "181-oldschool_128k.mp3",
+          "e_rated": false
+        },
+        {
+          "name": "Smooth AC",
+          "code": "181-smoothac_128k.mp3",
+          "e_rated": false
+        },
+        {
+          "name": "UK top 40",
+          "code": "181-uktop40_128k.mp3",
+          "e_rated": false
+        },
+        {
+          "name": "The Heart (Love Songs)",
+          "code": "181-heart_128k.mp3",
+          "e_rated": false
+        },
+        {
+        "name": "TThe Vibe of Vegas",
+        "code": "181-vibe_128k.mp3",
+        "e_rated": false
+        }
+      ]
+    }
+  ]
+}
