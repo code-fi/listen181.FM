@@ -1,44 +1,46 @@
-import React from 'react';
-import {
-  Dimensions,
-  FlatList,
-  StyleSheet,
-  Text,
-  TouchableOpacity,
-  View,
-} from 'react-native';
+import React, {useCallback} from 'react';
+import {FlatList, StyleSheet, Text, TouchableOpacity, View} from 'react-native';
 import {NavigationFunctionComponent} from 'react-native-navigation';
 import {getAppStore} from '../../store';
 import {observer} from 'mobx-react-lite';
+import {SafeAreaView} from 'react-native-safe-area-context';
 
-const {width} = Dimensions.get('window');
-const NUMBER_OF_COLUMNS = 3;
-const CARD_GAP = 12;
-const CONTAINER_PADDING = 18;
-const CARD_WIDTH =
-  (width - CONTAINER_PADDING * 2 - CARD_GAP * (NUMBER_OF_COLUMNS - 1)) /
-  NUMBER_OF_COLUMNS;
 export const StationsScreen: NavigationFunctionComponent<{
   channel: Channel;
 }> = observer(({channel}) => {
+  const {
+    player: {station},
+  } = getAppStore();
+  const renderItem = useCallback(
+    ({item}: {item: Station}) => {
+      return (
+        <StationCard
+          active={station?.code === item.code}
+          station={item}
+          key={item.code}
+        />
+      );
+    },
+    [station?.code],
+  );
   return (
-    <FlatList
-      contentContainerStyle={styles.listContainer}
-      numColumns={NUMBER_OF_COLUMNS}
-      data={channel.stations}
-      ItemSeparatorComponent={Separator}
-      renderItem={({item, index}) => (
-        <ChannelCard index={index} station={item} key={item.code} />
-      )}
-    />
+    <SafeAreaView edges={['top']} mode="padding" style={{flexGrow: 1}}>
+      <FlatList
+        showsVerticalScrollIndicator={false}
+        contentContainerStyle={styles.listContainer}
+        data={channel.stations}
+        ItemSeparatorComponent={Separator}
+        ListHeaderComponent={() => <Header channelName={channel.genre} />}
+        renderItem={renderItem}
+      />
+    </SafeAreaView>
   );
 });
 
-const ChannelCard: React.FC<{station: Station; index: number}> = ({
+const StationCard: React.FC<{station: Station; active: boolean}> = ({
   station,
-  index,
+  active,
 }) => {
-  const isLastOnColumn = (index + 1) % NUMBER_OF_COLUMNS !== 0;
   const {
     player: {setCurrentStation},
   } = getAppStore();
@@ -46,22 +48,39 @@ const ChannelCard: React.FC<{station: Station; index: number}> = ({
     <TouchableOpacity
       onPress={() => setCurrentStation(station)}
       activeOpacity={0.8}>
-      <View style={[styles.channelCard, isLastOnColumn && styles.lastCard]}>
-        <Text numberOfLines={2} style={styles.channelTitle}>
+      <View style={styles.channelCard}>
+        <Text
+          numberOfLines={1}
+          style={[
+            styles.stationTitle,
+            active ? styles.activeStationTitle : {},
+          ]}>
           {station.name}
         </Text>
-        <Text numberOfLines={1} style={styles.stationCount}>
-          {station.e_rated ? 'explicit' : ''}
-        </Text>
+        {station.e_rated ? (
+          <View style={styles.expContainer}>
+            <Text numberOfLines={1} style={styles.stationCount}>
+              E
+            </Text>
+          </View>
+        ) : null}
       </View>
     </TouchableOpacity>
   );
 };
 const Separator = () => <View style={styles.separator} />;
 
+const Header: React.FC<{channelName: string}> = ({channelName}) => (
+  <View style={styles.headerContainer}>
+    <Text style={styles.header}>Playing the best</Text>
+    <Text style={styles.subheader}>{channelName} radio from 181.fm</Text>
+  </View>
+);
+
 const styles = StyleSheet.create({
   headerContainer: {
-    paddingVertical: CONTAINER_PADDING * 2,
+    paddingVertical: 48,
+    paddingHorizontal: 18,
   },
   header: {
     fontSize: 28,
@@ -73,34 +92,38 @@ const styles = StyleSheet.create({
     color: '#6f6f6f',
   },
   listContainer: {
-    padding: CONTAINER_PADDING,
+    paddingTop: 12,
     flexGrow: 1,
+    paddingBottom: 120,
   },
   channelCard: {
-    width: CARD_WIDTH,
-    height: 100,
-    backgroundColor: '#f2f2f2',
-    borderRadius: 6,
-    padding: 8,
+    paddingHorizontal: 18,
+    flexDirection: 'row',
     alignItems: 'center',
-    justifyContent: 'center',
-    borderWidth: 1,
-    borderColor: '#e2e2e2',
+    // justifyContent: 'center',
   },
-  channelTitle: {
-    color: '#353535',
-    fontWeight: 'bold',
-    textAlign: 'center',
+  stationTitle: {
+    color: '#8a8a8a',
+    fontWeight: '500',
+    flex: 1,
+    fontSize: 18,
+  },
+  activeStationTitle: {
+    color: '#4b4b4b',
+    fontSize: 20,
+  },
+  expContainer: {
+    paddingVertical: 3,
+    paddingHorizontal: 6,
+    backgroundColor: '#9c2626',
+    borderRadius: 3,
   },
   stationCount: {
-    color: '#6b6b6b',
-    textAlign: 'center',
-    marginTop: 2,
-  },
-  lastCard: {
-    marginRight: CARD_GAP,
+    color: '#fff',
   },
   separator: {
-    height: CARD_GAP,
+    height: 1,
+    backgroundColor: '#eee',
+    marginVertical: 18,
   },
 });

@@ -35,28 +35,31 @@ export const MiniPlayer: React.FC = observer(() => {
 const styles = StyleSheet.create({
   container: {
     flexDirection: 'row',
-    padding: 18,
+    padding: 16,
     alignItems: 'center',
     position: 'absolute',
-    bottom: 0,
-    left: 0,
-    right: 0,
-    backgroundColor: '#f9f9f9',
-    borderTopColor: '#e6e6e6',
-    borderTopWidth: 1,
+    bottom: 48,
+    left: 18,
+    right: 18,
+    borderRadius: 12,
+    backgroundColor: 'rgba(249,249,249,0.9)',
+    borderColor: '#e6e6e6',
+    borderWidth: 1,
   },
   image: {
-    width: 60,
-    height: 60,
-    borderRadius: 6,
+    width: 50,
+    height: 50,
+    borderRadius: 8,
   },
   trackName: {
-    fontSize: 18,
+    fontSize: 16,
     fontWeight: '500',
     color: '#363636',
+    textTransform: 'capitalize',
   },
   artistName: {
     color: '#767676',
+    fontSize: 12,
   },
   contentContainer: {
     flex: 1,
@@ -65,6 +68,6 @@ const styles = StyleSheet.create({
   playStopIcon: {
     width: 30,
     height: 30,
-    tintColor: '#545454',
+    tintColor: '#848484',
   },
 });
