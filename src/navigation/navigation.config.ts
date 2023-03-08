@@ -1,31 +1,33 @@
 import {Navigation} from 'react-native-navigation';
 import {registerChannelsScreen} from '../screens/channels/channels.nav';
 import {registerStationsScreen} from '../screens/station/station.nav';
+import {registerMiniPlayer} from '../components/mini-player/mini-player.nav';
+import {presentMiniPlayer} from '../components/mini-player';
 // import {colors} from '@theme/colors';
 
 export const registerScreens = () => {
   registerChannelsScreen();
   registerStationsScreen();
   // registerSplashScreen();
-  // Navigation.setLazyComponentRegistrator(() => {
-  //   registerOverlay();
-  //   registerBanner();
-  //   registerLoginScreen();
-  //   registerSignupScreen();
-  //   registerResetPasswordScreen();
-  //   registerVerifyCodeScreen();
-  //   registerHomeScreen();
-  //   registerOrdersScreen();
-  //   registerOrderScreen();
-  //   registerProfileScreen();
-  //   registerEditProfileScreen();
-  //   registerChangePasswordScreen();
-  //   registerSettingsScreen();
-  //   registerQuoteScreen();
-  //   registerCreateScreen();
-  //   registerPayOrderScreen();
-  //   registerWebViewScreen();
-  // });
+  Navigation.setLazyComponentRegistrator(() => {
+    registerMiniPlayer();
+    //   registerBanner();
+    //   registerLoginScreen();
+    //   registerSignupScreen();
+    //   registerResetPasswordScreen();
+    //   registerVerifyCodeScreen();
+    //   registerHomeScreen();
+    //   registerOrdersScreen();
+    //   registerOrderScreen();
+    //   registerProfileScreen();
+    //   registerEditProfileScreen();
+    //   registerChangePasswordScreen();
+    //   registerSettingsScreen();
+    //   registerQuoteScreen();
+    //   registerCreateScreen();
+    //   registerPayOrderScreen();
+    //   registerWebViewScreen();
+  });
 };
 
 export const switchRoot = (
@@ -92,6 +94,6 @@ export const bootNavigation = () => {
     },
   });
   Navigation.events().registerAppLaunchedListener(() => {
-    return switchRoot();
+    return switchRoot().finally(presentMiniPlayer);
   });
 };

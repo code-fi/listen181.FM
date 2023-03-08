@@ -4,7 +4,6 @@ import {FlexStyle} from 'react-native';
 
 export interface RegisterComponentOptions {
   withSafeArea?: boolean;
-  withMiniPlayer?: boolean;
 }
 
 export interface PushScreenParams {

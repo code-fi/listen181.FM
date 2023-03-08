@@ -21,16 +21,6 @@ import {
   SHOW_MODAL_ANIMATION_CONFIG,
 } from './navigation.constants';
 import {compose} from '../utils/xtra';
-import {MiniPlayer} from '../components/mini-player';
-
-const withMiniPlayerProvider = (Component: NavigationFunctionComponent) => {
-  return (props: any) => (
-    <>
-      <Component {...props} />
-      <MiniPlayer />
-    </>
-  );
-};
 
 const withSaferAreaProvider = (Component: NavigationFunctionComponent) => {
   return (props: any) => (
@@ -50,17 +40,13 @@ export const registerComponent = (
   options?: RegisterComponentOptions,
 ) => {
   const componentTree = [];
-  const {withSafeArea, withMiniPlayer} = {
+  const {withSafeArea} = {
     ...defaultOptions,
     ...options,
   };
 
   if (withSafeArea) {
     componentTree.push(withSaferAreaProvider);
-  }
-
-  if (withMiniPlayer) {
-    componentTree.push(withMiniPlayerProvider);
   }
 
   const wrappedComponent = compose(...componentTree)(Component);
