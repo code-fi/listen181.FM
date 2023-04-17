@@ -97,7 +97,7 @@ const styles = StyleSheet.create({
     paddingBottom: 120,
   },
   channelCard: {
-    paddingHorizontal: 18,
+    padding: 18,
     flexDirection: 'row',
     alignItems: 'center',
     // justifyContent: 'center',
@@ -124,6 +124,5 @@ const styles = StyleSheet.create({
   separator: {
     height: 1,
     backgroundColor: '#eee',
-    marginVertical: 18,
   },
 });

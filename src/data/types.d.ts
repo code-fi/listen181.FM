@@ -15,4 +15,5 @@ interface StationMeta {
 
 interface Album {
   Image: string;
+  LargeImage: string;
 }

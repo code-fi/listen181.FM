@@ -1,12 +1,12 @@
 export const fetchStationMeta = ({
-  station = '181-powerexplicit_128k.mp3',
+  station = 'powerexplicit',
   successCallback,
 }: {
   station?: string;
   successCallback: (meta: StationMeta) => void;
 }) => {
   fetch(
-    `https://player.181fm.com/streamdata.php?i=${station}&h=listen.181fm.com&p=7080`,
+    `https://player.181fm.com/streamdata.php?i=181-${station}_128k.mp3&h=listen.181fm.com&p=7080`,
   )
     .then(response => {
       response.json().then(successCallback);

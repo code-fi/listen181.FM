@@ -1,4 +1,4 @@
-import {Navigation} from 'react-native-navigation';
+import { Navigation } from "react-native-navigation";
 import {MINI_PLAYER_ID} from './mini-player.constants';
 
 export const presentMiniPlayer = () => {

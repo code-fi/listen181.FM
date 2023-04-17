@@ -6,32 +6,32 @@
       "stations": [
         {
           "name": "Classic Hits 181",
-          "code": "181-greatoldies_128k.mp3",
+          "code": "greatoldies",
           "e_rated": false
         },
         {
           "name": "Good Time Oldies",
-          "code": "181-goodtime_128k.mp3",
+          "code": "goodtime",
           "e_rated": false
         },
         {
           "name": "Mellow Gold",
-          "code": "181-mellow_128k.mp3",
+          "code": "mellow",
           "e_rated": false
         },
         {
           "name": "Soul",
-          "code": "181-soul_128k.mp3",
+          "code": "soul",
           "e_rated": false
         },
         {
           "name": "Beatles",
-          "code": "181-beatles_128k.mp3",
+          "code": "beatles",
           "e_rated": false
         },
         {
           "name": "Super 70s",
-          "code": "181-70s_128k.mp3",
+          "code": "70s",
           "e_rated": false
         }
       ]
@@ -41,32 +41,32 @@
       "stations": [
         {
           "name": "Awesome 80's",
-          "code": "181-awesome80s_128k.mp3",
+          "code": "awesome80s",
           "e_rated": false
         },
         {
           "name": "Lite 80's",
-          "code": "181-lite80s_128k.mp3",
+          "code": "lite80s",
           "e_rated": false
         },
         {
           "name": "80's Country",
-          "code": "181-80scountry_128k.mp3",
+          "code": "80scountry",
           "e_rated": false
         },
         {
           "name": "80's RnB",
-          "code": "181-80srnb_128k.mp3",
+          "code": "80srnb",
           "e_rated": false
         },
         {
           "name": "80's Lite RnB",
-          "code": "181-80sliternb_128k.mp3",
+          "code": "80sliternb",
           "e_rated": false
         },
         {
           "name": "80's Hairband",
-          "code": "181-hairband_128k.mp3",
+          "code": "hairband",
           "e_rated": false
         }
       ]
@@ -76,37 +76,37 @@
       "stations": [
         {
           "name": "Star 90's",
-          "code": "181-star90s_128k.mp3",
+          "code": "star90s",
           "e_rated": false
         },
         {
           "name": "90's Country",
-          "code": "181-90scountry_128k.mp3",
+          "code": "90scountry",
           "e_rated": false
         },
         {
           "name": "Lite 90's",
-          "code": "181-lite90s_128k.mp3",
+          "code": "lite90s",
           "e_rated": false
         },
         {
           "name": "90's Alternative",
-          "code": "181-90salt_128k.mp3",
+          "code": "90salt",
           "e_rated": false
         },
         {
           "name": "90's Dance",
-          "code": "181-90sdance_128k.mp3",
+          "code": "90sdance",
           "e_rated": false
         },
         {
           "name": "90's Lite RnB",
-          "code": "181-90sliternb_128k.mp3",
+          "code": "90sliternb",
           "e_rated": false
         },
         {
           "name": "90's RnB",
-          "code": "181-90srnb_128k.mp3",
+          "code": "90srnb",
           "e_rated": false
         }
       ]
@@ -116,53 +116,368 @@
       "stations": [
         {
           "name": "Pop 181 (Top 40)",
-          "code": "181-power_128k.mp3",
+          "code": "power",
           "e_rated": false
         },
         {
           "name": "Pop 181",
-          "code": "181-powerexplicit_128k.mp3",
+          "code": "powerexplicit",
           "e_rated": true
         },
         {
           "name": "The Office",
-          "code": "181-office_128k.mp3",
+          "code": "office",
           "e_rated": false
         },
         {
           "name": "The Mix",
-          "code": "181-themix_128k.mp3",
+          "code": "themix",
           "e_rated": false
         },
         {
           "name": "The Point",
-          "code": "181-thepoint_128k.mp3",
+          "code": "thepoint",
           "e_rated": false
         },
         {
           "name": "Old School HipHop/RnB",
-          "code": "181-oldschool_128k.mp3",
+          "code": "oldschool",
           "e_rated": false
         },
         {
           "name": "Smooth AC",
-          "code": "181-smoothac_128k.mp3",
+          "code": "smoothac",
           "e_rated": false
         },
         {
           "name": "UK top 40",
-          "code": "181-uktop40_128k.mp3",
+          "code": "uktop40",
           "e_rated": false
         },
         {
           "name": "The Heart (Love Songs)",
-          "code": "181-heart_128k.mp3",
+          "code": "heart",
           "e_rated": false
         },
         {
-        "name": "TThe Vibe of Vegas",
-        "code": "181-vibe_128k.mp3",
-        "e_rated": false
+          "name": "TThe Vibe of Vegas",
+          "code": "vibe",
+          "e_rated": false
+        }
+      ]
+    },
+    {
+      "genre": "Rock",
+      "stations": [
+        {
+          "name": "The Buzz (Alt. Rock)",
+          "code": "buzz",
+          "e_rated": false
+        },
+        {
+          "name": "Classic Buzz (Alt)",
+          "code": "classicbuzz",
+          "e_rated": false
+        },
+        {
+          "name": "The Eagle (Classic)",
+          "code": "eagle",
+          "e_rated": false
+        },
+        {
+          "name": "Rock 181",
+          "code": "rock",
+          "e_rated": false
+        },
+        {
+          "name": "Rock 40 (Rock & Roll)",
+          "code": "rock40",
+          "e_rated": false
+        },
+        {
+          "name": "80's Hairband",
+          "code": "hairband",
+          "e_rated": false
+        },
+        {
+          "name": "Yacht Rock",
+          "code": "yatchrock",
+          "e_rated": false
+        },
+        {
+          "name": "Chloe @181.FM",
+          "code": "chloe",
+          "e_rated": false
+        },
+        {
+          "name": "The Point",
+          "code": "thepoint",
+          "e_rated": false
+        },
+        {
+          "name": "The Rock! (Hard Rock)",
+          "code": "hardrock",
+          "e_rated": false
+        }
+      ]
+    },
+    {
+      "genre": "Urban",
+      "stations": [
+        {
+          "name": "The Beat (HipHop/R&B)",
+          "code": "beat",
+          "e_rated": false
+        },
+        {
+          "name": "The Box (Urban)",
+          "code": "thebox",
+          "e_rated": false
+        },
+        {
+          "name": "True R&B",
+          "code": "rnb",
+          "e_rated": false
+        },
+        {
+          "name": "Soul",
+          "code": "soul",
+          "e_rated": false
+        },
+        {
+          "name": "Party 181",
+          "code": "party",
+          "e_rated": false
+        },
+        {
+          "name": "Jammin 181",
+          "code": "jammin",
+          "e_rated": false
+        },
+        {
+          "name": "80's RnB",
+          "code": "80srnb",
+          "e_rated": false
+        },
+        {
+          "name": "80's Lite RnB",
+          "code": "80sliternb",
+          "e_rated": false
+        },
+        {
+          "name": "Old School HipHop/RnB",
+          "code": "oldschool",
+          "e_rated": false
+        }
+      ]
+    },
+    {
+      "genre": "Dance / Techno",
+      "stations": [
+        {
+          "name": "Energy 98",
+          "code": "energy98",
+          "e_rated": false
+        },
+        {
+          "name": "Chilled Out",
+          "code": "chilled",
+          "e_rated": false
+        },
+        {
+          "name": "Classic Energy",
+          "code": "classicenergy",
+          "e_rated": false
+        },
+        {
+          "name": "Energy 93",
+          "code": "energy93",
+          "e_rated": false
+        },
+        {
+          "name": "Studio 181",
+          "code": "ball",
+          "e_rated": false
+        },
+        {
+          "name": "The Vibe of Vegas",
+          "code": "vibe",
+          "e_rated": false
+        },
+        {
+          "name": "90's Dance",
+          "code": "90sdance",
+          "e_rated": false
+        },
+        {
+          "name": "Techno Club",
+          "code": "technoclub",
+          "e_rated": false
+        }
+      ]
+    },
+    {
+      "genre": "Easy listening",
+      "stations": [
+        {
+          "name": "The Breeze",
+          "code": "breeze",
+          "e_rated": false
+        },
+        {
+          "name": "True Blues",
+          "code": "blues",
+          "e_rated": false
+        },
+        {
+          "name": "Jazz Mix",
+          "code": "jazzmix",
+          "e_rated": false
+        },
+        {
+          "name": "Classic Guitar",
+          "code": "classicguitar",
+          "e_rated": false
+        },
+        {
+          "name": "Classic Jazz",
+          "code": "classicjazz",
+          "e_rated": false
+        },
+        {
+          "name": "Vocal Jazz",
+          "code": "vocals",
+          "e_rated": false
+        },
+        {
+          "name": "BeBop Jazz",
+          "code": "bebop",
+          "e_rated": false
+        },
+        {
+          "name": "Fusion Jazz",
+          "code": "fussionjazz",
+          "e_rated": false
+        },
+        {
+          "name": "Trance Jazz",
+          "code": "trancejazz",
+          "e_rated": false
+        },
+        {
+          "name": "Classical Music",
+          "code": "classical",
+          "e_rated": false
+        },
+        {
+          "name": "Acid Jazz",
+          "code": "acidjazz",
+          "e_rated": false
+        }
+      ]
+    },
+    {
+      "genre": "Talk Radio",
+      "stations": [
+        {
+          "name": "Comedy Club",
+          "code": "comedy",
+          "e_rated": false
+        }
+      ]
+    },
+    {
+      "genre": "Christmas",
+      "stations": [
+        {
+          "name": "Chistmas Kountry",
+          "code": "xkountry",
+          "e_rated": false
+        },
+        {
+          "name": "Christmas Classic",
+          "code": "xtraditional",
+          "e_rated": false
+        },
+        {
+          "name": "Christmas Oldies",
+          "code": "xoldies",
+          "e_rated": false
+        },
+        {
+          "name": "Christmas Country",
+          "code": "xcountry",
+          "e_rated": false
+        },
+        {
+          "name": "Christmas Power",
+          "code": "xpower",
+          "e_rated": false
+        },
+        {
+          "name": "Christmas Highway",
+          "code": "xhighway",
+          "e_rated": false
+        },
+        {
+          "name": "Christmas Soundtracks",
+          "code": "xsoundtrax",
+          "e_rated": false
+        },
+        {
+          "name": "Christmas R&B",
+          "code": "xtrue",
+          "e_rated": false
+        },
+        {
+          "name": "Christmas Rock",
+          "code": "xrock",
+          "e_rated": false
+        },
+        {
+          "name": "Christmas Mix",
+          "code": "xmix",
+          "e_rated": false
+        },
+        {
+          "name": "Christmas Fun",
+          "code": "xfun",
+          "e_rated": false
+        },
+        {
+          "name": "Christmas Kids",
+          "code": "xkids",
+          "e_rated": false
+        },
+        {
+          "name": "Christmas Blender",
+          "code": "xbelnder",
+          "e_rated": false
+        },
+        {
+          "name": "Christmas Standards",
+          "code": "xstandards",
+          "e_rated": false
+        },
+        {
+          "name": "Christmas Spirit",
+          "code": "xspirit",
+          "e_rated": false
+        },
+        {
+          "name": "Christmas Smooth Jazz",
+          "code": "xsmooth",
+          "e_rated": false
+        },
+        {
+          "name": "Christmas Gospel",
+          "code": "xgospel",
+          "e_rated": false
+        },
+        {
+          "name": "Christmas Swing",
+          "code": "xswing",
+          "e_rated": false
         }
       ]
     }

@@ -12,6 +12,7 @@ const StationMeta = types.model({
 
 const Album = types.model({
   Image: types.maybeNull(types.string),
+  LargeImage: types.maybeNull(types.string),
 });
 
 const Station = types.model({

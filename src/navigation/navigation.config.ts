@@ -1,8 +1,9 @@
 import {Navigation} from 'react-native-navigation';
 import {registerChannelsScreen} from '../screens/channels/channels.nav';
-import {registerStationsScreen} from '../screens/station/station.nav';
+import {registerStationsScreen} from '../screens/stations/stations.nav';
 import {registerMiniPlayer} from '../components/mini-player/mini-player.nav';
 import {presentMiniPlayer} from '../components/mini-player';
+import { registerStationScreen } from "../screens/station/station.nav";
 // import {colors} from '@theme/colors';
 
 export const registerScreens = () => {
@@ -11,6 +12,7 @@ export const registerScreens = () => {
   // registerSplashScreen();
   Navigation.setLazyComponentRegistrator(() => {
     registerMiniPlayer();
+    registerStationScreen();
     //   registerBanner();
     //   registerLoginScreen();
     //   registerSignupScreen();

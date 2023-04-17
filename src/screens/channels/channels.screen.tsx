@@ -8,7 +8,7 @@ import {
   View,
 } from 'react-native';
 import {channels} from '../../data';
-import {goToStationsScreen} from '../station/stations.nav.helpers';
+import {goToStationsScreen} from '../stations/stations.nav.helpers';
 import {NavigationFunctionComponent} from 'react-native-navigation';
 
 const {width} = Dimensions.get('window');
@@ -23,6 +23,7 @@ export const ChannelsScreen: NavigationFunctionComponent = ({componentId}) => {
     <FlatList
       ListHeaderComponent={Header}
       contentContainerStyle={styles.listContainer}
+      showsVerticalScrollIndicator={false}
       numColumns={NUMBER_OF_COLUMNS}
       data={channels}
       ItemSeparatorComponent={Separator}
